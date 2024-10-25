@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home-page.css">
+    <script src="home-page.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Header con i loghi e le opzioni utente -->
+    <div class="header">
+        <ul class="ul1">
+            <li><img src="logo/LogoJordan.png" alt="Logo-Jordan"></li>
+            <li><img src="logo/converse.png" alt="Logo-Converse" class="converse"></li>
+        </ul>
+        <ul class="ul2">
+            <li>Trova un negozio</li><span>|</span>
+            <li>Aiuto</li><span>|</span>
+            <li>Unisciti a noi</li><span>|</span>
+            <li>Accedi</li>
+        </ul>
+    </div>
+
+    <!-- Menu principale di navigazione con il logo Nike e le categorie -->
+    <div class="menu">
+        <ul class="ul11">
+            <li><img src="logo/LogoNike.png" alt="Logo-Nike" class="Nike"></li>
+        </ul>
+        <ul class="ul22">
+            <li>Novità e in evidenza</li>
+            <li>Uomo</li>
+            <li>Donna</li>
+            <li>Bambini</li>
+            <li>Outlet</li>
+        </ul>
+        <ul class="ul33">
+            <li>
+                <div class="input-group-custom">
+                    <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" placeholder="Cerca...">
+                </div>
+            </li>
+            <li>
+                <button class="btn2"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </li>
+            <li>
+                <i class="fa-regular fa-heart heart" style="font-size: 20px; margin-left: 50px; border-radius: 50%; padding: 8px; margin-top: 10px;"></i>
+            </li>
+            <li>
+                <a href="../Carrello/carrello.html" style="color: black; text-decoration: none;">
+                    <i class="fa-solid fa-bag-shopping bag" style="font-size: 20px; margin-left: 10px; border-radius: 50%; padding: 10px; margin-top: 8px;"></i>
+                </a>
+                <span id="contatore"></span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Sezione principale con banner, testo e immagini di evidenza -->
+    <div class="testo">
+        <ul class="ulTest">
+            <li id="sopra">Tutti i nuovi arrivi</li>
+            <li id="sotto"><a href="#">Acquista</a></li>
+        </ul>
+    </div>
+
+    <div class="banner">
+        <img src="../HomePage/Foto/hero-banner.jpg" alt="hero-banner" style="width: 100%;">
+        <article class="artBanner">
+            <h2>REGALA IL MEGLIO</h2>
+            <p>Ispirazione e movimento: il regalo perfetto.</p>
+            <button>Acquista</button>
+            <button>Bambini</button>
+        </article>
+    </div>
+
+    <!-- Sezione trend della settimana -->
+    <div class="Trend">
+        <ul class="ulTrend">
+            <li style="font-size: 20px;">Trend della settimana</li>
+        </ul>
+        <ul class="ulTrend2">
+            <li style="margin-right: 20px;"><button id="indietro">&#60;</button></li>
+            <li><button id="avanti">&#62;</button></li>
+        </ul>
+    </div>
+
+    <div class="contenitore">
+        <div id="result"></div>
+    </div>
+
+    <!-- Sezione acquista per sport -->
+    <div class="Sport">
+        <ul class="ulSport">
+            <li style="font-size: 20px;">Acquista per sport</li>
+        </ul>
+        <ul class="ulSport2">
+            <li style="margin-right: 20px;"><button id="indietro2">&#60;</button></li>
+            <li><button id="avanti2">&#62;</button></li>
+        </ul>
+    </div>
+
+    <div class="contenitore2">
+        <div id="SportResult">
+            <div class="Div2">
+                <img src="../HomePage/Foto/sport_1.jpg" alt="Calcio">
+                <h1>Calcio</h1>
+            </div>
+            <div class="Div2">
+                <img src="../HomePage/Foto/sport_2.jpg" alt="Danza">
+                <h1>Danza</h1>
+            </div>
+            <div class="Div2">
+                <img src="../HomePage/Foto/sport_3.jpg" alt="Basket">
+                <h1>Basket</h1>
+            </div>
+            <div class="Div2">
+                <img src="../HomePage/Foto/sport_4.jpg" alt="Tennis">
+                <h1>Tennis</h1>
+            </div>
+            <div class="Div2">
+                <img src="../HomePage/Foto/sport_5.jpg" alt="Fitness">
+                <h1>Fitness</h1>
+            </div>
+            <div class="Div2">
+                <img src="../HomePage/Foto/sport_6.jpg" alt="Running">
+                <h1>Running</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sezione prodotti per i member -->
+    <div class="Member">
+        <ul class="ulMember">
+            <li style="font-size: 20px;">Prodotti per i member</li>
+        </ul>
+        <ul class="ulMember2">
+            <li style="margin-right: 20px;"><button id="indietro3">&#60;</button></li>
+            <li><button id="avanti3">&#62;</button></li>
+        </ul>
+    </div>
+
+    <div class="contenitore2">
+        <div id="MemberResult">
+            <!-- Offerte speciali per i membri -->
+            <div class="Div2">
+                <img src="../HomePage/Foto/banner_2.jpg" alt="">
+                <div class="pr">
+                    <p>Prodotti per i member</p>
+                    <p>Il tuo accesso in esclusiva</p>
+                    <a href="#">Acquista</a>
+                </div>
+            </div>
+            <div class="Div2">
+                <img src="../HomePage/Foto/banner_5.jpg" alt="">
+                <div class="pr">
+                    <p>Ricompensa per i member</p>
+                    <p>Il nostro modo di ringraziarti</p>
+                    <a href="#">Festeggiamo</a>
+                </div>
+            </div>
+            <div class="Div2">
+                <img src="../HomePage/Foto/banner_6.jpg" alt="">
+                <div class="pr">
+                    <p>Sport e benessere</p>
+                    <p>Muoviti al tuo ritmo</p>
+                    <a href="#">Inizia a muoverti</a>
+                </div>
+            </div>
+            <div class="Div2">
+                <img src="../HomePage/Foto/banner_1.jpg" alt="">
+                <div class="pr">
+                    <p>Nike By You</p>
+                    <p>Crea modelli unici</p>
+                    <a href="#">Personalizza</a>
+                </div>
+            </div>
+            <div class="Div2">
+                <img src="../HomePage/Foto/banner_3.jpg" alt="">
+                <div class="pr">
+                    <p>App Nike</p>
+                    <p>Sempre al top</p>
+                    <a href="#">Nike App</a>
+                </div>
+            </div>
+            <div class="Div2">
+                <img src="../HomePage/Foto/banner_4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="DivFooter">
+            <ul class="ulFooter1">
+                <li>Risorse</li>
+                <li>Gift card</li>
+                <li>Trova un negozio</li>
+                <li>Nike Journal</li>
+                <li>Diventa member</li>
+                <li>Sconto studenti</li>
+                <li>Feedback</li>
+                <li>Codici promozionali</li>
+            </ul>
+
+            <ul class="ulFooter2">
+                <li>Gift card</li>
+                <li>Trova un negozio</li>
+                <li>Nike Journal</li>
+                <li>Diventa member</li>
+                <li>Sconto studenti</li>
+                <li>Feedback</li>
+                <li>Codici promozionali</li>
+            </ul>
+
+            <ul class="ulFooter3">
+                <li>Assistenza</li>
+                <li>Hai bisogno di aiuto?</li>
+                <li>Stato ordine</li>
+                <li>Spedizione e consegna</li>
+                <li>Resi</li>
+                <li>Opzioni di pagamento</li>
+                <li>Contattaci</li>
+                <li>Recensioni</li>
+                <li>Assistenza Codici promozionali Nike</li>
+            </ul>
+
+            <ul class="ulFooter4">
+                <li><i class="fa-solid fa-globe"></i> Italia</li>
+            </ul>
+        </div>
+<!---->
+        <div class="DivFooter2">
+            <ul class="ulFooter5">
+                <li> &copy; 2024 Nike, Inc. Tutti i diritti riservati</li>
+            </ul>
+
+            <ul class="ulFooter6">
+                <li>Guide</li>
+            </ul>
+
+            <ul class="ulFooter7">
+                <li>Condizioni d'uso</li>
+            </ul>
+
+            <ul class="ulFooter8">
+                <li>Condizioni di vendita</li>
+            </ul>
+
+            <ul class="ulFooter9">
+                <li>Info Legali e societarie</li>
+            </ul>
+
+            <ul class="ulFooter10">
+                <li>Informazioni sulla privacy e sui cookie</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
