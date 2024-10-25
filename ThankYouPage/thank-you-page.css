@@ -1,0 +1,6 @@
+body{display:flex;justify-content:center;align-items:center;height:100vh;margin:0;background-color:#f0f0f0;font-family:sans-serif;} /* Imposta il corpo della pagina con le proprietà di layout, centratura e stile */ 
+.contenitore{display:flex;flex-direction:column;align-items:center;opacity:0;transform:translateY(50px);animation:fadeInUp 1s forwards ease-in-out;} /* Stile per il contenitore principale con animazione di apparizione */ 
+h1{font-size:3em;color:#333;margin:20px 0;} /* Stile per gli h1 con dimensione, colore e margine */ 
+p{color:#666;font-size:1.2em;} /* Stile per i paragrafi con colore e dimensione del font */ 
+.icon{font-size:50px;color:green;margin-bottom:20px;} /* Stile per le icone con dimensione, colore e margine */ 
+@keyframes fadeInUp{to{opacity:1;transform:translateY(0);}} /* Definizione dell'animazione 'fadeInUp' per rendere visibile il contenitore */
