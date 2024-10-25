@@ -1,0 +1,25 @@
+*{box-sizing: border-box;font-family: Arial,sans-serif;margin: 0;}
+.carrello{margin: 120px auto;width: 70%;display: grid;grid-template-columns: 1fr .5fr;grid-template-areas: "carrello2 Riepilogo" "carrello2 Riepilogo" "preferiti preferiti";grid-row: auto auto;}
+.ul1{padding: 10px;border: solid 1px gainsboro;margin-bottom: 10px;}
+ul{list-style-type: none;padding: 0;margin: 0;}
+
+img{width: 50px;}
+.Ul{margin-bottom: 10px;border-bottom: solid 1px gainsboro;padding-bottom: 10px;}
+
+.Ul button{background-color: black;color: white;padding: 5px 10px;cursor: pointer;margin-top: 10px;border: none;border-radius: 5px;transition: background-color 0.3s ease, transform 0.3s ease;}
+
+.Ul button:hover{background-color: white;color: black;border: 1px solid black;}
+
+.carrello2{grid-area: carrello2;}
+.Riepilogo{grid-area: Riepilogo;}
+.preferiti{grid-area: preferiti;}
+
+.Riepilogo{padding-left: 15px;padding-right: 15px;}
+.accordion { border-radius: 5px; margin: 20px 0;}
+.accordion-header {background: white; padding: 15px 0px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;}
+.accordion-body {padding: 15px 0px; display: none;}
+.arrow {transition: transform 0.3s ease;}
+.rotate {transform: rotate(90deg);} /* Ruota la freccia */
+button{cursor: pointer;}
+
+
