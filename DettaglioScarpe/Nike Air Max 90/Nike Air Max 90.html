@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Nike Air Max 90/Nike Air Max 90.css">
+    <script src="../Nike Air Max 90/Nike Air Max 90.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<!-- Sezione header con logo e link di navigazione -->
+<div class="header">
+    <ul class="ul1">
+        <!-- Immagini dei loghi di diversi marchi -->
+        <li><img src="../../HomePage/logo/LogoJordan.png" alt="Logo-Jordan"></li>
+        <li><img src="../../HomePage/logo/converse.png" alt="Logo-Converse" class="converse"></li>
+    </ul>
+
+    <ul class="ul2">
+        <!-- Link di navigazione per trovare un negozio, aiuto, registrazione e accesso -->
+        <li>Trova un negozio</li><span>|</span>
+        <li>Aiuto</li><span>|</span>
+        <li>Unisciti a noi</li><span>|</span>
+        <li>Accedi</li>
+    </ul>
+</div>
+
+<!-- Sezione menu principale con logo del marchio e voci di navigazione -->
+<div class="menu">
+    <ul class="ul11">
+        <!-- Logo del marchio che rimanda alla homepage -->
+        <li><a href="../../HomePage/home-page.html"><img src="../../HomePage/logo/LogoNike.png" alt="" class="Nike"></li></a>
+    </ul>
+
+    <ul class="ul22">
+        <!-- Voci di navigazione principali per le categorie di prodotto -->
+        <li>Novità e in evidenza</li>
+        <li>Uomo</li>
+        <li>Donna</li>
+        <li>Bambini</li>
+        <li>Outlet</li>
+    </ul>
+
+    <ul class="ul33">
+        <li>
+            <!-- Barra di ricerca per cercare prodotti -->
+            <div class="input-group-custom">
+                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" placeholder="Cerca...">
+            </div>
+        </li>
+        <li><button class="btn2"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+        <!-- Icona per i preferiti -->
+        <li><i class="fa-regular fa-heart heart" style="font-size: 20px; margin-left: 50px; border-radius: 50%; padding: 8px; margin-top: 10px;"></i></li>
+        <li style="display: flex;">
+            <!-- Icona del carrello che rimanda alla pagina del carrello -->
+            <a href="../../Carrello/carrello.html" style="color: black; text-decoration: none;">
+                <i class="fa-solid fa-bag-shopping bag" style="font-size: 20px; margin-left: 10px; border-radius: 50%; padding: 10px; margin-top: 8px;"></i>
+            </a>
+            <span id="contatore"></span> <!-- Contatore degli articoli nel carrello -->
+        </li>
+    </ul>
+</div>
+
+<!-- Sezione che mostra un messaggio di conferma dopo aver aggiunto un prodotto al carrello -->
+<div class="spanTesto">
+    <ul class="ulTest1">
+        <li style="font-size: 18px;"><i class="fa-solid fa-check" style="color: green;"></i> Aggiungi al carrello</li>
+    </ul>
+
+    <ul class="ulTest2">
+        <!-- Immagine del prodotto aggiunto al carrello -->
+        <li><img src="../../HomePage/FotoScarpe/AIR-MAX90.jpg" alt="" id="img2"></li>
+    </ul>
+
+    <ul class="ulTest3">
+        <li style="font-weight: 550;">Nike Air Max 90</li> <!-- Nome del prodotto -->
+        <li>Scarpa - Donna</li> <!-- Descrizione del prodotto -->
+        <li>149,99 €</li> <!-- Prezzo del prodotto -->
+        <li id="taglia"></li> <!-- Selezione della taglia, da riempire dinamicamente -->
+    </ul>
+
+    <ul class="ulTest4">
+        <!-- Pulsanti per visualizzare il carrello e procedere al pagamento -->
+        <button class="ula"><a href="../../Carrello/carrello.html">Visualizza carrello</a></button>
+        <button class="ulb"><a href="#">Vai al pagamento</a></button>
+    </ul>
+</div>
+
+<!-- Sezione contenuto con nuovi arrivi e dettagli sui prodotti -->
+<div id="content">
+    <div class="testo">
+        <ul class="ulTest">
+            <li id="sopra">Tutti i nuovi arrivi</li> <!-- Titolo della sezione -->
+            <li id="sotto"><a href="#">Acquista</a></li> <!-- Link per acquistare -->
+        </ul>
+    </div>
+
+    <div class="DtScarpe">
+        <div id="result">
+            <!-- Contenuto dinamico verrà inserito qui -->
+        </div>
+
+        <div class="img">
+            <ul>
+                <li><img src="../../HomePage/FotoScarpe/AIR-MAX90.jpg" alt="" id="img"></li>
+                <div class="bot">
+                    <!-- Pulsanti per navigare tra le immagini del prodotto -->
+                    <button id="btn">&#60;</button>
+                    <button id="btn2">&#62;</button>
+                </div>
+            </ul>
+        </div>
+
+        <div class="shop">
+            <ul class="ulShop">
+                <li>Nike Air Max 90</li> <!-- Nome del prodotto -->
+                <li>Scarpa - Donna</li> <!-- Descrizione del prodotto -->
+                <li>149,99 €</li> <!-- Prezzo del prodotto -->
+            </ul>
+            <ul class="ulShop2">
+                <li>Seleziona la <br> taglia/misura</li> <!-- Promemoria per la selezione della taglia -->
+                <li>Guida alle taglie e alle <br> misure</li> <!-- Link alla guida alle taglie -->
+            </ul>
+            <ul class="ulShop3">
+                <!-- Opzioni di taglia aggiuntive possono essere inserite dinamicamente qui -->
+            </ul>
+
+            <span class="spanTaglia">Seleziona la misura.</span> <!-- Messaggio per la selezione della misura -->
+
+            <ul class="ulShop4">
+                <!-- Pulsanti per aggiungere il prodotto al carrello e ai preferiti -->
+                <li><button id="btnShop">Aggiungi al carrello</button></li><br>
+                <li><button>Aggiungi ai preferiti <i class="fa-regular fa-heart heart"></i></button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+ <!-- Footer -->
+ <div class="footer">
+    <div class="DivFooter">
+        <ul class="ulFooter1">
+            <li>Risorse</li>
+            <li>Gift card</li>
+            <li>Trova un negozio</li>
+            <li>Nike Journal</li>
+            <li>Diventa member</li>
+            <li>Sconto studenti</li>
+            <li>Feedback</li>
+            <li>Codici promozionali</li>
+        </ul>
+
+        <ul class="ulFooter2">
+            <li>Gift card</li>
+            <li>Trova un negozio</li>
+            <li>Nike Journal</li>
+            <li>Diventa member</li>
+            <li>Sconto studenti</li>
+            <li>Feedback</li>
+            <li>Codici promozionali</li>
+        </ul>
+
+        <ul class="ulFooter3">
+            <li>Assistenza</li>
+            <li>Hai bisogno di aiuto?</li>
+            <li>Stato ordine</li>
+            <li>Spedizione e consegna</li>
+            <li>Resi</li>
+            <li>Opzioni di pagamento</li>
+            <li>Contattaci</li>
+            <li>Recensioni</li>
+            <li>Assistenza Codici promozionali Nike</li>
+        </ul>
+
+        <ul class="ulFooter4">
+            <li><i class="fa-solid fa-globe"></i> Italia</li>
+        </ul>
+    </div>
+<!---->
+    <div class="DivFooter2">
+        <ul class="ulFooter5">
+            <li> &copy; 2024 Nike, Inc. Tutti i diritti riservati</li>
+        </ul>
+
+        <ul class="ulFooter6">
+            <li>Guide</li>
+        </ul>
+
+        <ul class="ulFooter7">
+            <li>Condizioni d'uso</li>
+        </ul>
+
+        <ul class="ulFooter8">
+            <li>Condizioni di vendita</li>
+        </ul>
+
+        <ul class="ulFooter9">
+            <li>Info Legali e societarie</li>
+        </ul>
+
+        <ul class="ulFooter10">
+            <li>Informazioni sulla privacy e sui cookie</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
