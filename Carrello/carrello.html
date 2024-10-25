@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="carrello.css">
+    <script src="carrello.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="carrello">
+        <div class="carrello2">
+          <ul class="ul1">
+              <li style="color: #FF7300;font-weight: 550;font-size: 20px;">Spedizione gratuita per i Member.</li>
+              <li style="color: #808080;font-size: 17px;">Diventa Member Nike e approfitta della spedizione rapida e gratuita. <a href="#" style="color: #808080;">Unisciti a noi</a> o <a href="#" style="color: #808080;">Accedi</a></li>
+          </ul>
+          <div id="result">
+            <p style="font-size: 28px;">Carrello</p>
+          </div>
+       </div>  
+
+       <div class="preferiti">
+        <p style="font-size: 28px;">Preferiti</p>
+        <p>Vuoi visualizzare i preferiti? <a href="#" style="color:#808080;">Unisciti a noi</a> o <a href="#" style="color:#808080;">Accedi</a></p>
+      </div>
+
+       <div class="Riepilogo">
+        <p style="font-size: 28px;">Riepilogo</p>
+    
+        <!-- Accordion per il codice promozionale -->
+        <div class="accordion">
+            <div class="accordion-header">
+                Hai un codice promozionale?
+                <span class="arrow">▶</span>
+            </div>
+            <div class="accordion-body" style="display: none;">
+                Questo è il contenuto dell'accordion. Puoi aggiungere qui informazioni, dettagli o qualsiasi altro testo desiderato.
+            </div>
+        </div>
+    
+        <!-- Riepilogo dei costi -->
+        <ul style="display: flex;justify-content: space-between;margin-top: -15px;margin-bottom: 15px;">
+            <li>Subtotale <i class="fa-solid fa-question" style="font-size: 15px;"></i></li>
+            <li id="subtotale">-</li>
+        </ul>
+        <ul style="display: flex;justify-content: space-between;margin-bottom: 18px;">
+            <li>Costi di spedizione e gestione <br> previsti</li>
+            <li>Gratis</li>
+        </ul>
+        <ul style="display: flex;justify-content: space-between;padding-top: 15px;padding-bottom: 15px;border-top: solid 1px gainsboro;border-bottom: solid 1px gainsboro;margin-bottom: 25px;">
+            <li>Totale</li>
+            <li id="totale">-</li>
+        </ul>
+        <ul>
+            <li style="margin-bottom: 10px;"><button style="padding: 20px;width: 100%;font-size: 20px;border-radius: 50px;border: none;"  id="pagamento">Vai al pagamento</button></li>
+            <li><button style="padding: 20px;width: 100%;border-radius: 50px;border: 1px solid gainsboro;"  id="paypal"><i class="fa-brands fa-paypal" style="font-size: 20px;"></i></button></li>
+        </ul>
+
+     
+    </div>
+    
+    
+</body>
+</html>
