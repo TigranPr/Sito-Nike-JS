@@ -1,0 +1,119 @@
+*{box-sizing: border-box;font-family: Arial,sans-serif;margin: 0;}
+
+.header{display: grid;grid-template-columns: 1fr 1fr;grid-template-rows: auto auto; grid-template-areas: "ul1 ul2";background-color: #f5f5f5;}
+ul{list-style-type: none;padding: 0;margin: 0;}
+img{width: 35px;margin-top: 10px;}
+
+.ul1{grid-area: ul1;display: flex;margin-left: 40px;}
+.ul1 li{margin-left: 10px;}
+.converse{margin-top: 12px;width: 40px;}
+
+span{margin-right:10px;}
+.ul2{grid-area: ul2;display: flex;justify-content: right;line-height: 45px;margin-right: 40px;}
+.ul2 li{margin-right: 10px;font-size: 12px;font-weight: 550;}
+
+.menu{display: grid;grid-template-columns: 1fr 1fr 1fr;grid-template-rows: auto auto auto;grid-template-areas:"ul11 ul22 ul33";position: relative;}
+.ul11{grid-area: ul11;display: flex;margin-left: 40px;line-height: 40px;}
+.ul11 li{margin-left: 10px;}
+.ul22{grid-area: ul22;display: flex;justify-content: center;line-height: 60px;}
+.ul22 li{margin-left: 15px;font-size: 15px;font-weight: 550;}
+
+.ul33{grid-area: ul33;display: flex;justify-content: right;margin-right: 40px;line-height: 55px;}
+.ul33 li{margin-right: 10px;font-size: 12px;font-weight: 550;}
+.Nike{width: 70px;}
+.input-group-custom {position: relative; display: flex; width: 100%; max-width: 150px;margin-top: 13px;}
+button{border-radius: 20px 0 0 20px;line-height:0px;padding: 10px;background-color: #f5f5f5;border: none;}
+.btn2{display: none;}
+button:hover{background-color: #e5e5e5;}
+input{border-radius: 0 20px 20px 0;line-height: 0px;padding: 10px;outline: none;width: 100%;border: none;background-color: #f5f5f5;}
+.heart:hover{background-color: #e5e5e5;}
+.bag:hover{background-color: #e5e5e5;}
+#contatore{display: none;}
+
+.spanTesto{position: absolute;top: 105px;right: 0;background-color: white;display: none;grid-template-columns: .3fr 1fr;grid-template-rows: auto auto;grid-template-areas:"ulTest1 ulTest1" "ulTest2 ulTest3" "ulTest4 ulTest4";width: 500px;padding: 10px;z-index: 999;}
+.ulTest1{grid-area: ulTest1;margin-bottom: 10px;}
+.ulTest2{grid-area: ulTest2;padding-right: 20px;}
+.ulTest2 img{width: 90px;}
+.ulTest3{grid-area: ulTest3;font-size: 20px;}
+.ulTest4{grid-area: ulTest4;display: flex;justify-content: space-between;margin-top: 20px;}
+.ulTest4 {display: flex;justify-content: space-between;list-style-type: none;padding: 0;}
+
+.ulTest4 button {padding: 20px;border: 1px solid gainsboro;border-radius: 15px;cursor: pointer;transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;width: 49%;}
+
+.ulTest4 button:hover {background-color: #fff; /* Cambia colore sfondo al passaggio del mouse */color: #000; /* Cambia colore testo */border: 2px solid #000; /* Bordo solido nero */transform: scale(1.05);}
+/*transform: translateY(-3px); Sposta leggermente il bottone verso l'alto */
+
+.ulTest4 button:active {transform: translateY(2px); /* Simula un effetto di pressione quando viene cliccato */box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Riduce l'ombra per farlo sembrare premuto */}
+
+.ulTest4 a {text-decoration: none; color: inherit; /* Il colore eredita quello del bottone */}
+
+.ula{background-color: white;color: black;}
+.ulb{background-color: black;color: white;}
+
+
+.testo{display: flex;justify-content: center;align-items: center;background-color: #f5f5f5;padding: 10px;}
+.testo li{text-align: center;}
+#sotto a{color: black;font-weight: 550;}
+
+.DtScarpe{display: grid;grid-template-columns: 0.1fr 0.9fr 0.7fr;grid-template-rows: auto auto auto;grid-template-areas: "result img shop";width: 70%;margin: 0 auto;margin-top: 90px;margin-bottom: 120px;}
+
+#result{grid-area: result;width: 45px;}
+#result img{width: 100%;border-radius: 5px;cursor: pointer;}
+
+.img{grid-area: img;width: 520px;;}
+.img button{border-radius:20px;height: 40px;width: 40px;background-color: white;}
+.bot{margin-top: -60px;display: flex;justify-content: flex-end;margin-right: 20px;display: flex;flex-wrap: wrap;gap:10px;}
+.img img{width: 100%;border-radius: 10px;}
+.img video{width: 100%;border-radius:10px;margin-top:10px}
+
+.shop{grid-area: shop;width: 400px;}
+
+.ulShop{margin: 0 auto;width: 85%;margin-top: 10px;margin-bottom: 50px;}
+.ulShop li{font-size: 17px;}
+.ulShop li:first-child{margin-bottom: 10px;font-size: 20px;font-weight: 550;}
+.ulShop li:last-child{margin-top: 35px;}
+
+.ulShop2{margin: 0 auto;width: 85%;display: flex;justify-content: space-between;margin-bottom: 5px;}
+.ulShop2 li{font-size: 15px;}
+.ulShop2 li:first-child{color: black;font-weight: 550;}
+.ulShop2 li:last-child{color: gray;font-weight: 550;cursor: pointer;}
+
+.ulShop3 {margin: 0 auto;width: 85%;display: flex;flex-wrap: wrap;gap: 5px;justify-content: left;margin-bottom: 30px;}
+.ulShop3 li {font-size: 15px;border: solid gainsboro 1px;padding: 0;width: 62px;height: 50px;text-align: center;box-sizing: border-box;display: flex;justify-content: center;align-items: center;border-radius: 5px;cursor: pointer;transition: background-color 0.3s;} 
+.ulShop3 li:hover{border: solid 1px black;}
+.spanTaglia{color: #D30005;display: none;margin: -15px auto;width: 85%;margin-bottom: 25px;}
+
+.ulShop4{margin: 0 auto;width: 85%;}
+.ulShop4 li{width: 100%;font-size: 18px;}
+.ulShop4 button{width: 100%;padding: 20px;border-radius: 30px;transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;}
+.btn2{background-color: white;border: solid 1px gainsboro;margin-top: -12px;}
+.ulShop4 button:hover {transform: scale(1.05);}
+.ulShop4 li:first-child button {background-color: black;color: white;padding: 30px;}
+.ulShop4 li:first-child button:hover {background-color: white;color: black;border: 2px solid black;}
+
+.ulShop4 li:last-child button {background-color: white;color: black;border: solid 1px gainsboro;margin-top: -10px;}
+.ulShop4 li:last-child button:hover {border: 2px solid black;}
+
+.selected {background-color: black;color: white;}
+
+/*  */
+.footer{margin-top: 20px;background-color: #1f1f21;padding-top: 50px;padding-bottom: 90px;}
+.DivFooter{display: grid;grid-template-columns: .4fr .4fr .4fr 1fr;grid-template-rows: auto auto; grid-template-areas: "ulFooter1 ulFooter2 ulFooter3 ulFooter4";width: 90%;margin: 0 auto;}
+.DivFooter li{ color:  #9E9EA0;font-size: 14px;font-weight: 550;}
+.ulFooter1{grid-area: ulFooter1;}
+.ulFooter1 li:first-child{color: white;margin-bottom: 22px;}
+.ulFooter1 li{margin-bottom: 5px;}
+
+.ulFooter2{grid-area: ulFooter2;}
+.ulFooter2 li:first-child{color: white;margin-bottom: 22px;}
+.ulFooter2 li{margin-bottom: 5px;}
+
+.ulFooter3{grid-area: ulFooter3;}
+.ulFooter3 li:first-child{color: white;margin-bottom: 22px;}
+.ulFooter3 li{margin-bottom: 5px;}
+
+.ulFooter4{grid-area: ulFooter4;display: flex;justify-content: flex-end;}
+
+
+.DivFooter2{width: 90%;margin: 0 auto;display: flex;justify-content: space-between;flex-wrap: wrap;margin-top: 50px;}
+.DivFooter2 li{color: #9E9EA0;font-size: 14px;font-weight: 550;}
