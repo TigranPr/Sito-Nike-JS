@@ -1,0 +1,98 @@
+*{font-family: Arial, sans-serif;margin: 0;background-color: #f9f9f9;}
+header {text-align: center;margin-bottom: 20px;margin-top:120px;}
+h2{color: #333;margin-bottom: 20px;}
+main{width: 80%;margin: 0 auto;display: grid;grid-template-columns: 1fr .7fr;grid-template-rows: auto auto;grid-template-areas: "container container2";opacity: 0;transform: translateY(20px);transition: opacity 0.5s ease, transform 0.5s ease;animation: entry 0.5s forwards;} @keyframes entry{to{opacity: 1;transform: translateY(0);}}
+
+
+
+.container{grid-area: container;}
+.container2{grid-area: container2;overflow: hidden;}
+
+
+.label1{display: flex;justify-content: space-between;gap: 20px;margin-bottom: 20px;}
+.label2{display: flex;justify-content: space-between;gap: 20px; margin-bottom: 20px;}
+.label3{display: flex;justify-content: space-between;gap: 20px; margin-bottom: 20px;}
+.label4{display: flex;justify-content: space-between;gap: 20px; margin-bottom: 20px;}
+.label5{display: flex;justify-content: space-between;gap: 20px; margin-bottom: 20px;}
+.label6{display: flex;justify-content: flex-end;gap: 20px; margin-bottom: 20px;}
+.label6 input{cursor: pointer;transition: transform 0.3s ease, background-color 0.3s ease; background-color: black; border: none; color: white; padding: 10px 20px; border-radius: 5px; font-size: 16px;border: solid 1px black;} 
+.label6 input:hover{transform: scale(1.05); background-color:white; color: black;border: solid 1px black;}
+.spedizione,.ritiro{text-align: center;}
+.spedizione,.ritiro,.nome,.cognome,.email,.tel{width: 48%;padding: 15px;border: solid 1px gainsboro;border-radius: 8px;}
+.indirizzo,p{width: 100%;}
+.indirizzo{padding: 15px;border: solid 1px gainsboro;border-radius: 8px;}
+.cap, .città, .paese{width:31.5%;padding: 15px;border: solid 1px gainsboro;border-radius: 8px;}
+.paese{color: gray;}
+p{color: gray;}
+
+.container2 h2{width: 90%;margin: 0 auto;margin-bottom: 20px;}
+ul{display: flex;justify-content: space-between;list-style: none;padding: 0;width: 90%;margin: 0 auto;padding: 3px;}
+
+.Ul{display: flex;justify-content: start;gap: 20px;margin-bottom: 20px;}
+.Ul li{font-size: 18px;}
+.Ul img{width: 90px;height: 110px;}
+
+/***********************************************/
+#pagamento{width: 80%;margin: 0 auto;grid-template-columns: 1fr .7fr;grid-template-rows: auto auto;grid-template-areas: "container3 container4";display: none;opacity: 0;transform: translateY(20px);transition: opacity 0.5s ease, transform 0.5s ease;animation: entry 0.5s forwards;} @keyframes entry{to{opacity: 1;transform: translateY(0);}}
+.container3{ grid-area: container3;}
+.container4{ grid-area: container4;}
+.container3 p{color: black;width: 100%;margin-bottom: 5px;}
+
+.error::placeholder{color: red;}
+
+.paga{background-color: black;color: white;padding: 10px 20px;cursor: pointer;margin-top: 10px;border: none;border-radius: 5px;transition: background-color 0.3s ease, transform 0.3s ease;}
+.paga:hover{background-color: white;color: black;transform: scale(1.05);border: 1px solid black;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main{background-color: #fff;padding: 20px;border-radius: 5px;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);}
+
+form{margin-bottom: 20px;}
+
+label{display: block;margin-bottom: 5px;}
+
+input[type="text"],input[type="email"],select{width: 100%;padding: 10px;margin-bottom: 10px;border: 1px solid #ccc;border-radius: 4px;
+}
+
+button {
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+} */
