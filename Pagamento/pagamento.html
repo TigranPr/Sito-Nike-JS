@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link al foglio di stile Font Awesome per le icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="pagamento.css">
+    <script src="pagamento.js"></script>
+    
+    <!-- Titolo della pagina -->
+    <title>Pagamento</title>
+</head>
+<body>
+
+    <!-- Intestazione della pagina con il titolo -->
+    <header>
+        <p>Pagamento</p>
+    </header>
+
+    <!-- Sezione principale della pagina -->
+    <main id="main"> 
+        <div class="container">
+            <section>
+                <h2>Opzioni di consegna</h2>
+                <!-- Form per inserire le opzioni di consegna -->
+                <form id="form" method="post">
+                    <!-- Input per spedizione e ritiro, disabilitati -->
+                    <label class="label1">
+                        <input type="text" placeholder="Spedizione" disabled class="spedizione">
+                        <input type="text" placeholder="Ritiro" disabled class="ritiro">
+                    </label>
+
+                    <!-- Input per nome e cognome -->
+                    <label class="label2">
+                        <input type="text" placeholder="Nome" class="nome" id="nome">
+                        <input type="text" placeholder="Cognome" class="cognome" id="cognome">
+                    </label>
+                    
+                    <!-- Input per indirizzo -->
+                    <label class="label3">
+                        <input type="text" placeholder="Indirizzo e numero civico*" class="indirizzo" id="indirizzo">
+                    </label>
+                    
+                    <!-- Informazioni aggiuntive per l'indirizzo -->
+                    <p style="color: gray;margin-bottom: 20px;">+ Aggiungi Azienda, C/O, App, Interno, Unità</p>
+
+                    <!-- Input per CAP, città e selezione del paese -->
+                    <label class="label4">
+                        <input type="text" placeholder="CAP"  class="cap" id="cap">
+                        <input type="text" placeholder="Città"  class="città" id="citta">
+                        <select  class="paese" id="paese">
+                            <option value="">Seleziona un paese</option>
+                            <option value="italia">Italia</option>
+                            <option value="francia">Francia</option>
+                            <option value="spagna">Spagna</option>
+                        </select>
+                    </label>
+
+                    <!-- Input per email e numero di telefono -->
+                    <label class="label5">
+                        <input type="email" placeholder="E-mail*"  class="email" id="email">
+                        <input type="number" placeholder="Numero di telefono*"  class="tel" id="telefono">
+                    </label>
+
+                    <!-- Bottone per inviare il modulo -->
+                    <label class="label6">
+                        <input type="submit" value="Salva e continua" id="submit">
+                    </label>
+                </form>
+            </section>   
+
+            <!-- Sezione per visualizzare informazioni sul pagamento e sull'ordine -->
+            <div class="testo">
+                <p style="border-top: 1px solid gainsboro;padding-top: 15px;padding-bottom: 15px;">Pagamento</p>
+                <p style="border-top: solid 1px gainsboro; padding-top: 15px; padding-bottom: 15px;">Verifica dell'ordine</p>
+            </div>
+        </div>
+
+        <div class="container2">
+            <h2>Nel carrello</h2>
+            <ul>
+                <li>Subtotale</li>
+                <li id="subtotale"></li>
+            </ul>
+            <ul>
+                <li>Costi di spedizione stimati</li>
+                <li>Gratis</li>
+            </ul>
+            <ul>
+                <li>Totale</li>
+                <li id="totale"></li>
+            </ul>
+            <!-- Separatore visivo -->
+            <hr style="border-top: 1px solid gainsboro;margin: 30px auto;width: 90%;">
+            <div id="result">
+                <p style="width: 90%;margin: 0 auto;color: black;margin-bottom: 10px;">Arriverà in settimana</p>
+            </div>
+        </div>
+    </main>
+
+    <div id="pagamento"> 
+        <section class="container3">
+            <h2>Pagamento</h2>
+            <p>Paese di fatturazione</p>
+            <!-- Mostra il paese di fatturazione con un link per modificarlo -->
+            <p><span id="paese-fatturazione"></span> <a href="#" id="modifica-dati" style="text-decoration: none;color: green;">Modifica</a></p>
+
+            <p style="margin-bottom: 15px;">Seleziona un metodo di pagamento</p>
+            <!-- Form per il metodo di pagamento -->
+            <form id="form2" method="post">
+                <!-- Radio buttons per i metodi di pagamento -->
+                <label style="width: 100%; display: inline-block;margin-bottom: 15px;">
+                    <input type="radio" name="payment" value="carta di credito" required id="carta">
+                    <i class="fa-solid fa-credit-card"></i> Carta di credito o debito
+                </label>
+                <label style="width: 100%; display: inline-block;margin-bottom: 15px;">
+                    <input type="radio" name="payment" value="paypal" required  id="paypal">
+                    <i class="fa-brands fa-cc-paypal"></i> PayPal
+                </label>
+                <label style="width: 100%; display: inline-block;margin-bottom: 15px;">
+                    <input type="radio" name="payment" value="google" required  id="google">
+                    <i class="fa-brands fa-google-play"></i> Google Pay
+                </label>
+        
+                <!-- Sezione per aggiungere i dati della carta -->
+                <div style="border-radius: 10px; border: solid 1px gainsboro; padding: 20px;">
+                    <p style="font-size: 15px;margin-bottom: 10px;">Aggiungi carta</p>
+                    <label style="display: flex; justify-content: space-between; gap: 20px;">
+                        <input type="text" id="numeroCarta" name="numeroCarta" maxlength="16" pattern="\d{16}"  placeholder="Numero carta" style="width: 31.5%; padding: 15px; border: solid 1px gainsboro; border-radius: 8px;">
+                        <input type="month" id="scadenza" name="scadenza"  value="2024-10" style="width: 31.5%; padding: 15px; border: solid 1px gainsboro; border-radius: 8px;">
+                        <input type="text" id="cvv" name="cvv" maxlength="3" pattern="\d{3}"  placeholder="123" style="width: 31.5%; padding: 15px; border: solid 1px gainsboro; border-radius: 8px;">
+                    </label>
+                </div>
+                <!-- Bottone per inviare il modulo di pagamento -->
+                <button type="submit" class="paga">Paga</button>
+            </form>
+        </section>
+
+        <!-- Sezione per visualizzare ulteriori informazioni sul pagamento -->
+        <div class="container4">
+              <div id="result2">
+                <p style="width: 90%;margin: 0 auto;color: black;margin-bottom: 10px;"></p>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
