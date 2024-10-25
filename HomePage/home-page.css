@@ -1,0 +1,119 @@
+/* Imposta lo stile di base per tutti gli elementi */
+*{box-sizing: border-box;font-family: Arial,sans-serif;margin: 0;}
+
+/* Stile per l'intestazione */
+.header{display: grid;grid-template-columns: 1fr 1fr;grid-template-rows: auto auto;grid-template-areas: "ul1 ul2";background-color: #f5f5f5;}
+
+/* Rimuove i bullet point dalle liste */
+ul{list-style-type: none;padding: 0;margin: 0;}
+
+/* Stile per le immagini generali */
+img{width: 35px;margin-top: 10px;}
+
+/* Stile per il menu di navigazione a sinistra nell'intestazione */
+.ul1{grid-area: ul1;display: flex;margin-left: 40px;}
+.ul1 li{margin-left: 10px;}
+.converse{margin-top: 12px;width: 40px;}
+span{margin-right:10px;}
+
+/* Stile per il menu di navigazione a destra nell'intestazione */
+.ul2{grid-area: ul2;display: flex;justify-content: right;line-height: 45px;margin-right: 40px;}
+.ul2 li{margin-right: 10px;font-size: 12px;font-weight: 550;}
+
+/* Layout per la sezione del menu principale */
+.menu{display: grid;grid-template-columns: 1fr 1fr 1fr;grid-template-rows: auto auto auto;grid-template-areas:"ul11 ul22 ul33";}
+
+/* Stile per la sezione sinistra del menu */
+.ul11{grid-area: ul11;display: flex;margin-left: 40px;line-height: 40px;}
+.ul11 li{margin-left: 10px;}
+
+/* Stile per la sezione centrale del menu */
+.ul22{grid-area: ul22;display: flex;justify-content: center;line-height: 60px;}
+.ul22 li{margin-left: 15px;font-size: 15px;font-weight: 550;}
+
+/* Stile per la sezione destra del menu */
+.ul33{grid-area: ul33;display: flex;justify-content: right;margin-right: 40px;line-height: 55px;}
+.ul33 li{margin-right: 10px;font-size: 12px;font-weight: 550;}
+.Nike{width: 70px;}
+
+/* Stile per il campo di input personalizzato e i bottoni */
+.input-group-custom {position: relative; display: flex; width: 100%; max-width: 150px;margin-top: 13px;}
+button{border-radius: 20px 0 0 20px;line-height:0px;padding: 10px;background-color: #f5f5f5;border: none;}
+.btn2{display: none;}
+button:hover{background-color: #e5e5e5;}
+input{border-radius: 0 20px 20px 0;line-height: 0px;padding: 10px;outline: none;width: 100%;border: none;background-color: #f5f5f5;}
+.heart:hover{background-color: #e5e5e5;}
+.bag:hover{background-color: #e5e5e5;}
+
+/* Stile per la sezione testuale con centratura */
+.testo{display: flex;justify-content: center;align-items: center;background-color: #f5f5f5;padding: 10px;margin-bottom: 20px;border-bottom: solid 1px gainsboro;}
+.testo li{text-align: center;}
+#sotto a{color: black;font-weight: 550;}
+
+/* Stile per il banner e il suo contenuto */
+.banner{margin-top: -9px;}
+.artBanner{border: solid 1px rgb(0, 0, 0);width: 30%;margin-top: -150px;margin-left: 30px;}
+.artBanner h2{font-weight: 550;color: white;}
+.artBanner p{color: white;}
+.artBanner button{border-radius: 30px;padding: 15px;}
+.artBanner button:hover{background-color:black;color: white;}
+
+/* Stile per la sezione Trend e il layout */
+.Trend{display: grid;padding: 10px;grid-template-columns: 1fr 1fr;grid-template-rows: auto auto; grid-template-areas: "ulTrend ulTrend2";width: 90%;margin: 80px auto;}
+.ulTrend{grid-area: ulTrend;}
+.ulTrend2{grid-area: ulTrend2;display: flex;justify-content: flex-end;}
+.ulTrend li{font-weight: 550;}
+.ulTrend2 button{border-radius:30px;height: 50px;width: 50px;}
+
+/* Contenitore per visualizzare elementi in una griglia flessibile */
+.contenitore{width: 90%;margin: 0 auto;overflow: hidden;display: flex;margin-top: -70px;}
+#result{transition: transform 0.5s ease-in-out;display: flex;}
+.Div{width: 444px;margin-right: 17px;}
+.Div img{width: 100%;}
+.Div h3{margin-top: 10px;}
+.Div a{text-decoration: none;color: black;}
+
+/* Layout e stile per la sezione Sport */
+.Sport{display: grid;padding: 10px;grid-template-columns: 1fr 1fr;grid-template-rows: auto auto; grid-template-areas: "ulSport ulSport2";width: 90%;margin: 80px auto;}
+.ulSport{grid-area: ulSport;}
+.ulSport2{grid-area: ulSport2;display: flex;justify-content: flex-end;}
+.ulSport li{font-weight: 550;}
+.ulSport2 button{border-radius:30px;height: 50px;width: 50px;}
+
+/* Contenitore per una seconda griglia di elementi */
+.contenitore2{width: 90%;margin: 0 auto;overflow: hidden;display: flex;margin-top: -70px;margin-bottom: 100px;}
+#SportResult,#MemberResult{transition: transform 0.5s ease-in-out;display: flex;}
+.Div2{width: 444px;margin-right: 17px;cursor: pointer;}
+.Div2 img{width: 100%;}
+.Div2 h1{font-size: 20px;margin-top: 10px;}
+
+/* Layout e stile per la sezione dei membri */
+.Member{display: grid;padding: 10px;grid-template-columns: 1fr 1fr;grid-template-rows: auto auto; grid-template-areas: "ulMember ulMember2";width: 90%;margin: 80px auto;}
+.ulMember{grid-area: ulMember;}
+.ulMember2{grid-area: ulMember2;display: flex;justify-content: flex-end;}
+.ulMember li{font-weight: 550;}
+.ulMember2 button{border-radius:30px;height: 50px;width: 50px;}
+
+/* Stile per la sezione delle promozioni */
+.pr{width: 80%;margin: -170px auto;color: white;}
+.pr p{margin: 0;}
+.pr p:nth-child(1){font-size: 18px;}
+.pr p:nth-child(2){font-size: 25px;font-weight: 550;}
+.pr a{text-decoration: none;color: black;background-color: white;border-radius: 30px;display: inline-block;margin-top: 10px;padding-top: 8px;padding-bottom: 8px;padding-left: 20px;padding-right: 20px;}
+
+/* Stile per il footer */
+.footer{margin-top: 20px;background-color: #1f1f21;padding-top: 50px;padding-bottom: 90px;}
+.DivFooter{display: grid;grid-template-columns: .4fr .4fr .4fr 1fr;grid-template-rows: auto auto; grid-template-areas: "ulFooter1 ulFooter2 ulFooter3 ulFooter4";width: 90%;margin: 0 auto;}
+.DivFooter li{color:  #9E9EA0;font-size: 14px;font-weight: 550;}
+.ulFooter1{grid-area: ulFooter1;}
+.ulFooter1 li:first-child{color: white;margin-bottom: 22px;}
+.ulFooter1 li{margin-bottom: 5px;}
+.ulFooter2{grid-area: ulFooter2;}
+.ulFooter2 li:first-child{color: white;margin-bottom: 22px;}
+.ulFooter2 li{margin-bottom: 5px;}
+.ulFooter3{grid-area: ulFooter3;}
+.ulFooter3 li:first-child{color: white;margin-bottom: 22px;}
+.ulFooter3 li{margin-bottom: 5px;}
+.ulFooter4{grid-area: ulFooter4;display: flex;justify-content: flex-end;}
+.DivFooter2{width: 90%;margin: 0 auto;display: flex;justify-content: space-between;flex-wrap: wrap;margin-top: 50px;}
+.DivFooter2 li{color: #9E9EA0;font-size: 14px;font-weight: 550;}
